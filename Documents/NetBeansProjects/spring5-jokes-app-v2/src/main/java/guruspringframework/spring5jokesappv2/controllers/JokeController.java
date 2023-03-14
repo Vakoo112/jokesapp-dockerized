@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author vako
  */
-@RestController
 @Controller
 public class JokeController {
     private final JokeService jokeService;
@@ -31,10 +30,5 @@ public class JokeController {
         
         return "index";
     }
-    
-    @GetMapping("/test")
-    public String test(){
-        return "hey";
-    }
-    
+  
 }
